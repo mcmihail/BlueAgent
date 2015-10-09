@@ -10,27 +10,27 @@ DBUS_ADAPTORS += generated/Agent1.xml
 TEMPLATE = app
 
 SOURCES += main.cpp \
-    dbus/Agent1.cpp \
-    dbus/AgentManager1.cpp \
+    src/dbus/Agent1.cpp \
+    src/dbus/AgentManager1.cpp \
     src/BlueAgent.cpp \
     src/settings/Settings.cpp \
     src/plugin/Plugin.cpp
 
 HEADERS += \
-    dbus/Agent1.h \
-    dbus/AgentManager1.h \
+    inc/dbus/Agent1.h \
+    inc/dbus/AgentManager1.h \
     inc/BlueAgent.h \
     inc/settings/Settings.h \
     inc/plugin/Plugin.h
 
 INCLUDEPATH += inc/ \
-    public/
+    pub/
 
 LIBS += -ldl
 
 init_generated.commands = rm -rf generated; mkdir generated
 
-generate_xml.commands += qdbuscpp2xml -o generated/Agent1.xml dbus/Agent1.h
+generate_xml.commands += qdbuscpp2xml -o generated/Agent1.xml inc/dbus/Agent1.h
 generate_xml.depends = init_generated
 
 #generate_adaptor.commands = qdbusxml2cpp -a generated/Agent1Adaptor generated/Agent1.xml
