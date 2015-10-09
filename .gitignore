@@ -1,6 +1,7 @@
 *.pro.user*
 *.o
 BlueAgent
-Makefile
+Makefile*
 moc_*
 generated/*
+.blueagent.conf
