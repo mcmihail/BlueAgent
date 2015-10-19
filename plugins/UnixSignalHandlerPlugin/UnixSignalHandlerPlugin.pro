@@ -6,12 +6,12 @@
 
 QT       -= gui
 
-TARGET = UnixSignalHanderPlugin
+TARGET = UnixSignalHandlerPlugin
 TEMPLATE = lib
 
 DEFINES += UNIXSIGNALHANDERPLUGIN_LIBRARY
 
-SOURCES += UnixSignalHanderPlugin.cpp
+SOURCES += UnixSignalHandlerPlugin.cpp
 
 HEADERS +=
 

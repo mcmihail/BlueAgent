@@ -7,7 +7,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS =  ./BlueAgentApp.pro \
-    plugins/UnixSignalHanderPlugin
+    plugins/UnixSignalHandlerPlugin/UnixSignalHandlerPlugin.pro
 
 
 
