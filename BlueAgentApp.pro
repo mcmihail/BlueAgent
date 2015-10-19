@@ -14,14 +14,19 @@ SOURCES += main.cpp \
     src/dbus/AgentManager1.cpp \
     src/BlueAgent.cpp \
     src/settings/Settings.cpp \
-    src/plugin/Plugin.cpp
+    src/plugin/Plugin.cpp \
+    src/plugin/PluginManager.cpp \
+    src/plugin/LifeCyclePlugin.cpp
 
 HEADERS += \
     inc/dbus/Agent1.h \
     inc/dbus/AgentManager1.h \
     inc/BlueAgent.h \
     inc/settings/Settings.h \
-    inc/plugin/Plugin.h
+    inc/plugin/Plugin.h \
+    inc/plugin/LifeCyclePlugin.h \
+    inc/plugin/PluginManager.h \
+    pub/LifeCycleProtocol.h
 
 INCLUDEPATH += inc/ \
     pub/

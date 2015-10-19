@@ -10,6 +10,7 @@ typedef struct Tuple {
     QString defaultValue;
 }Tuple;
 
+static const Tuple PLUGIN_PATH = {"Path", "./plugins/"};
 static const Tuple CLOSING_PLUGIN = { "Closing", "UnixSignalHandler" };
 
 
@@ -33,7 +34,9 @@ void Settings::resetToDefaultValues() {
 }
 
 void Settings::setDefaultValues() {
+
     mSettings.beginGroup("Plugins");
+    mSettings.setValue(PLUGIN_PATH.key, CLOSING_PLUGIN.defaultValue);
     mSettings.setValue(CLOSING_PLUGIN.key, CLOSING_PLUGIN.defaultValue);
     mSettings.endGroup();
 }

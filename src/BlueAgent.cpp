@@ -1,6 +1,6 @@
 #include "BlueAgent.h"
 #include <QDebug>
-#include "plugin/Plugin.h"
+#include "plugin/LifeCyclePlugin.h"
 
 BlueAgent::BlueAgent(QObject *parent) :
     QObject(parent),
@@ -9,5 +9,6 @@ BlueAgent::BlueAgent(QObject *parent) :
 
 void BlueAgent::init() {
     qDebug() << "Closing plugin:" << mSettings.getClosingPluginName();
-    Plugin p(mSettings.getClosingPluginName());
+    LifeCyclePlugin *p = new LifeCyclePlugin(mSettings.getClosingPluginName());
+    p->init();
 }

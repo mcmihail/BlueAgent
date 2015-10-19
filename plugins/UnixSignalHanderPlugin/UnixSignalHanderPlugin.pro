@@ -13,8 +13,9 @@ DEFINES += UNIXSIGNALHANDERPLUGIN_LIBRARY
 
 SOURCES += UnixSignalHanderPlugin.cpp
 
-HEADERS += UnixSignalHanderPlugin.h\
-        unixsignalhanderplugin_global.h
+HEADERS +=
+
+INCLUDEPATH += ../../pub
 
 unix {
     target.path = /usr/lib
