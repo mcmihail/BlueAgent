@@ -9,7 +9,7 @@ DBUS_ADAPTORS += generated/Agent1.xml
 
 TEMPLATE = app
 
-SOURCES += main.cpp \
+SOURCES += src/main.cpp \
     src/dbus/Agent1.cpp \
     src/dbus/AgentManager1.cpp \
     src/BlueAgent.cpp \

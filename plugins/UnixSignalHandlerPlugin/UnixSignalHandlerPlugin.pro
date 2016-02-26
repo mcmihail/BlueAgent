@@ -15,7 +15,7 @@ SOURCES += UnixSignalHandlerPlugin.cpp
 
 HEADERS +=
 
-INCLUDEPATH += ../../pub
+INCLUDEPATH += ../../app/pub
 
 unix {
     target.path = /usr/lib
