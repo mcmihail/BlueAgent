@@ -1,3 +1,6 @@
+
+include(../common.pri)
+
 QT       += core dbus
 QT       -= gui
 

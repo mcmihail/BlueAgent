@@ -4,6 +4,8 @@
 #
 #-------------------------------------------------
 
+include(../../common.pri)
+
 QT       -= gui
 
 TARGET = UnixSignalHandlerPlugin

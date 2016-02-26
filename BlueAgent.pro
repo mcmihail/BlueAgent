@@ -4,10 +4,9 @@
 #
 #-------------------------------------------------
 
+include(common.pri)
+
 TEMPLATE = subdirs
 
 SUBDIRS =  app/BlueAgentApp.pro \
     plugins/UnixSignalHandlerPlugin/UnixSignalHandlerPlugin.pro
-
-
-
