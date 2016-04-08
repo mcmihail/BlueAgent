@@ -1,6 +1,6 @@
 *.pro.user*
 *.o
-BlueAgent
 Makefile*
 moc_*
-generated/*
+gen/*
+bin/*

@@ -2,6 +2,8 @@
 #
 # The Main application project
 
+include(../Common.pri)
+
 QT       += core
 
 QT       -= gui
@@ -15,4 +17,3 @@ TEMPLATE = app
 
 SOURCES += \
     BlueAgent.cpp
-
