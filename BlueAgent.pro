@@ -4,15 +4,15 @@
 #
 #-------------------------------------------------
 
-QT       += core
 
-QT       -= gui
+#
+# gen = generated files
+# bin = binary files
+# test = test files
+# app = main app files
+# plugins = plugins files
+#
 
-TARGET = BlueAgent
-CONFIG   += console
-CONFIG   -= app_bundle
+TEMPLATE = subdirs
 
-TEMPLATE = app
-
-
-SOURCES += main.cpp
+SUBDIRS =  ./app/BlueAgentApp.pro
