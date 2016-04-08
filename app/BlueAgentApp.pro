@@ -17,3 +17,6 @@ TEMPLATE = app
 
 SOURCES += \
     BlueAgent.cpp
+
+HEADERS += \
+    BlueAgent.h
