@@ -1,10 +1,3 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2015-10-02T17:22:49
-#
-#-------------------------------------------------
-
-
 #
 # gen = generated files
 # bin = binary files
@@ -15,4 +8,5 @@
 
 TEMPLATE = subdirs
 
-SUBDIRS =  ./app/BlueAgentApp.pro
+SUBDIRS =  ./app/BlueAgentApp.pro \
+    test/UnitTests
