@@ -18,8 +18,10 @@ TEMPLATE = app
 
 SOURCES += \
     BlueAgent.cpp \
-    dbus/SystemBusInterface.cpp
+    dbus/SystemBusInterface.cpp \
+    dbus/Properties.cpp
 
 HEADERS += \
     BlueAgent.h \
-    dbus/SystemBusInterface.h
+    dbus/SystemBusInterface.h \
+    dbus/Properties.h
