@@ -4,7 +4,8 @@
 
 include(../Common.pri)
 
-QT       += core
+QT       += core \
+            dbus
 
 QT       -= gui
 
@@ -16,7 +17,9 @@ TEMPLATE = app
 
 
 SOURCES += \
-    BlueAgent.cpp
+    BlueAgent.cpp \
+    dbus/SystemBusInterface.cpp
 
 HEADERS += \
-    BlueAgent.h
+    BlueAgent.h \
+    dbus/SystemBusInterface.h
